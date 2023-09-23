@@ -1,0 +1,20 @@
+.claseContenedorLugarHora {
+    height: 25px;
+    border: dotted 2px #faf0caff;
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+}
+
+.claseContenedorGrande {
+    height: 100px;
+    border: dotted 2px #faf0caff;
+    font-size: 3em;
+    text-align: center;
+    margin: 5px;
+}
+
+.imagen-pequena {
+    width: 100px;
+    height: 100px;
+  }

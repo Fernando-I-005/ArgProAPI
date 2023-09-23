@@ -10,4 +10,6 @@ $bright-pink-crayola: #f7567cff;
 .estiloAppTransito {
     background-color:#f7567cff;
     padding: 20px;
+    border: solid  #faf0caff;
+    border-radius: 8px;
   }

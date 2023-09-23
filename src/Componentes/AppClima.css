@@ -1,4 +1,7 @@
 .estiloAppClima {
-    background-color: #2e5eaaffgit ;
+    background-color: #2e5eaaff ;
+    border: solid  #faf0caff;
+    border-radius: 15px;
     padding: 20px;
+    height: 450px;
   }

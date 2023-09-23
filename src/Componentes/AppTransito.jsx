@@ -4,7 +4,7 @@ import "./AppTransito.css"
 export const AppTransito = () => {
   return (
     <div className="estiloAppTransito">
-    AppTransito
+    App Transito
     </div>
   )
 }

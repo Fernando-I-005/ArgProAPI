@@ -21,6 +21,7 @@ $bright-pink-crayola: #f7567cff;
   justify-content: center;
   border: 2px solid #ccc;
   background-color: #37b2e6ff;
+  border-radius: 8px;
   /* Solo para propósitos de demostración, puedes eliminar esto */
 }
 
@@ -31,6 +32,7 @@ $bright-pink-crayola: #f7567cff;
   justify-content: center;
   border: 2px solid #ccc;
   background-color: #fbacbeff;
+  border-radius: 8px;
   /* Solo para propósitos de demostración, puedes eliminar esto */
 }
 
