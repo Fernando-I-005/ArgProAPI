@@ -1,0 +1,38 @@
+/*
+$denim: #2e5eaaff;
+$picton-blue: #37b2e6ff;
+$lemon-chiffon: #faf0caff;
+$cherry-blossom-pink: #fbacbeff;
+$bright-pink-crayola: #f7567cff;
+*/
+
+.contenedorApp {
+  display: flex;
+  height: 100vh;
+  color:#faf0caff ;
+  border: 3px solid #fed9b7ff;
+  /* Esto asegura que la altura del contenedor sea igual a la altura de la ventana del navegador */
+}
+
+.mediaPantallaClima {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  background-color: #37b2e6ff;
+  /* Solo para propósitos de demostración, puedes eliminar esto */
+}
+
+.mediaPantallaTransito {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  background-color: #fbacbeff;
+  /* Solo para propósitos de demostración, puedes eliminar esto */
+}
+
+
+

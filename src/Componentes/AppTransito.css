@@ -7,8 +7,7 @@ $bright-pink-crayola: #f7567cff;
 */
 
 
-body {
-background-color: rgb(247, 246, 205);
-font-family: 'Montserrat', sans-serif;
+.estiloAppTransito {
+    background-color:#f7567cff;
+    padding: 20px;
   }
-
