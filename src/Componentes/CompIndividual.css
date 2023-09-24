@@ -1,14 +1,26 @@
 .claseIndividual {
     display:inline-block;
     border: dotted 2px black;
+    border-radius: 15px;
     font-size: 1em;
     text-align: center;
     margin: 5px;
-
-
+    width: 180px;
 }
-
 
 .ClaseBloque {
     display: inline-block;
+}
+
+.nombreParametro{
+    font-size: 0.8em;
+    color: darkgrey;
+}
+
+.nombreValor{
+    font-size: 1.1em;  
+}
+
+.nombreUnidad{
+    font-size: 0.6em;  
 }

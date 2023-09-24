@@ -1,7 +1,16 @@
 .claseContenedorTemp1 {
-    height: 45px;
+    
     border: dotted 2px violet;
+    border-radius: 15px;
     font-size: 1em;
     text-align: center;
-    margin: 5px;
+    margin: 0px;
+    padding: 15px;
+   
 }
+
+.contenedorSecundarioTemp{
+display: inline;
+}
+
+

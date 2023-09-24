@@ -1,7 +1,10 @@
 .claseContenedorSecundario {
    
-    border: dotted 4px rgb(15, 229, 236);
+    border: dotted 2px rgb(15, 229, 236);
+    border-radius: 15px;
     font-size: 1em;
     text-align: center;
-    margin: 5px;
+    margin: 15px 0px;
+    padding: 15px;
+    
 }
