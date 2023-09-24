@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ArgProAPI/static/css/main.a52f70d7.css",
-    "main.js": "/ArgProAPI/static/js/main.40100d07.js",
+    "main.css": "/ArgProAPI/static/css/main.d68f1706.css",
+    "main.js": "/ArgProAPI/static/js/main.fab6c491.js",
     "static/media/Nube1.png": "/ArgProAPI/static/media/Nube1.d79234909764ae52506f.png",
     "index.html": "/ArgProAPI/index.html",
-    "main.a52f70d7.css.map": "/ArgProAPI/static/css/main.a52f70d7.css.map",
-    "main.40100d07.js.map": "/ArgProAPI/static/js/main.40100d07.js.map"
+    "main.d68f1706.css.map": "/ArgProAPI/static/css/main.d68f1706.css.map",
+    "main.fab6c491.js.map": "/ArgProAPI/static/js/main.fab6c491.js.map"
   },
   "entrypoints": [
-    "static/css/main.a52f70d7.css",
-    "static/js/main.40100d07.js"
+    "static/css/main.d68f1706.css",
+    "static/js/main.fab6c491.js"
   ]
 }
