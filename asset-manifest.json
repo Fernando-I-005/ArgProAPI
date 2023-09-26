@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ArgProAPI/static/css/main.d68f1706.css",
-    "main.js": "/ArgProAPI/static/js/main.fab6c491.js",
-    "static/media/Nube1.png": "/ArgProAPI/static/media/Nube1.d79234909764ae52506f.png",
+    "main.css": "/ArgProAPI/static/css/main.70129cf4.css",
+    "main.js": "/ArgProAPI/static/js/main.db257004.js",
+    "static/media/lluvia.png": "/ArgProAPI/static/media/lluvia.ac1f715922d973d002bb.png",
     "index.html": "/ArgProAPI/index.html",
-    "main.d68f1706.css.map": "/ArgProAPI/static/css/main.d68f1706.css.map",
-    "main.fab6c491.js.map": "/ArgProAPI/static/js/main.fab6c491.js.map"
+    "main.70129cf4.css.map": "/ArgProAPI/static/css/main.70129cf4.css.map",
+    "main.db257004.js.map": "/ArgProAPI/static/js/main.db257004.js.map"
   },
   "entrypoints": [
-    "static/css/main.d68f1706.css",
-    "static/js/main.fab6c491.js"
+    "static/css/main.70129cf4.css",
+    "static/js/main.db257004.js"
   ]
 }
