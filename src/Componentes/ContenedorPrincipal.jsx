@@ -1,29 +1,33 @@
 import React from 'react'
 import "./ContenedorPrincipal.css"
-import imagenNube from "../Nube1.png"
+
 import { TMaxMin } from './TMaxMin'
 
-const imagenNube1 = imagenNube
 
 
-export const ContenedorPrincipal = () => {
+
+export const ContenedorPrincipal = ({ciudad, fecha,hora,tempActual,unidadTemp, imagenPronostico, textoPronostico, tempMax, tempMin}) => {
   return (
     <section className='contenedorSeccion'>
       <div className="claseContenedorLugarHora">
-        <h5 className='lugar'>Buenos Aires </h5>
-        <h6 className='hora'>  Lunes 10:45 PM </h6>
+        <h5 className='lugar'>{ciudad} </h5>
+        <h6 className='hora'>  {fecha} {hora} </h6>
       </div>
 
       <section className="claseContenedorGrande">
-        <h1 className="temperaturaPrincipal" >25</h1>
-        <h4 className="unidadTemperatura">ºC</h4>
-        <img className="imagenPng" src={imagenNube1} alt="Mi Imagen" />
+        <h1 className="temperaturaPrincipal" >{tempActual}</h1>
+        <h4 className="unidadTemperatura">{unidadTemp}</h4>
+        <img className="imagenPng" src={imagenPronostico} alt="Imagen del pronostico" />
       </section>
+
+      <div>
+      <h1 className='textoPronostico'>  {textoPronostico} </h1>
+      </div>
 
 
       <div className='contenedorMaxMin'>
-        <TMaxMin tempMaxMin={-7} textoMaxMin={"Min:"}/>
-        <TMaxMin tempMaxMin={43} textoMaxMin={"Max:"}/>
+        <TMaxMin tempMaxMin={tempMin} textoMaxMin={"Min:"} unidadTemp={unidadTemp} />
+        <TMaxMin tempMaxMin={tempMax} textoMaxMin={"Max:"} unidadTemp={unidadTemp}/>
       </div>
     </section>
   )

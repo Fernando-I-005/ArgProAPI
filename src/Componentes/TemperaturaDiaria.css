@@ -1,13 +1,13 @@
 .temperaturaDiaria {
-    border: dotted 2px #faf0caff;
+    /*border: dotted 2px #faf0caff;*/
     border-radius: 8px;
     text-align: center;
-    margin: 2px;
+    margin: 10px;
     display: inline-block;
 }
 
 .tValor {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .tValorUnidad {
@@ -16,5 +16,5 @@
 
 .horaValor {
     font-size: 0.7em;
-    color: darkgrey;
+    color: white
 }

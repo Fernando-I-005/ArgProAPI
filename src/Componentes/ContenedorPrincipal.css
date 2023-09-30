@@ -1,28 +1,31 @@
 .contenedorSeccion {
-    border: dotted 2px rgb(47, 238, 9);
+    border: double 4px#37b2e6ff;
     border-radius: 15px;
-    margin: 15px 0px;
+    margin: 20px 0px;
+    padding: 10px;
 }
 
 .claseContenedorLugarHora {
-    border: dotted 2px #faf0caff;
+    /*border: dotted 2px #faf0caff;*/
     border-radius: 15px;
-    font-size: 1.3em;
+    font-size: 1.8em;
     text-align: center;
-    margin: 15px 0px;
+    margin: px 0px;
 }
 
 .contenedorMaxMin {
-    border: dotted 2px rgb(166, 93, 226);
+    /*border: dotted 2px rgb(166, 93, 226);*/
     text-align: center;
-    margin: 15px 0px;
-    padding: 5px;
+    margin: 0px 0px;
+    padding: px;
     border-radius: 10px;
+    
+
 }
 
 .claseContenedorGrande {
     display: flex;
-    border: dotted 2px rgb(216, 14, 25);
+    /*border: dotted 2px rgb(216, 14, 25);*/
     padding: 0px;
     margin: 0px;
     justify-content: center;
@@ -31,19 +34,21 @@
 }
 
 .lugar {
-    border: dotted 2px rgb(213, 226, 25);
+    /*border: dotted 2px rgb(213, 226, 25);*/
     border-radius: 15px;
-    margin: 5px;
+    margin: 0px;
+    font-size: 1.6em;
+    
 }
 
 .hora {
-    border: dotted 2px rgb(213, 226, 25);
+    /*border: dotted 2px rgb(213, 226, 25);*/
     border-radius: 15px;
-    margin: 5px;
+    margin: 0px;
 }
 
 .temperaturaPrincipal {
-    border: dotted 2px rgb(213, 226, 25);
+    /*border: dotted 2px rgb(213, 226, 25);*/
     border-radius: 15px;
     display: inline;
     justify-content: center;
@@ -53,7 +58,7 @@
 }
 
 .unidadTemperatura {
-    border: dotted 2px rgb(213, 226, 25);
+   /* border: dotted 2px rgb(213, 226, 25);*/
     border-radius: 15px;
     display: inline;
     font-size: 3em;
@@ -62,13 +67,25 @@
 }
 
 .imagenPng {
-    border: dotted 2px rgb(213, 226, 25);
+    /*border: dotted 2px rgb(213, 226, 25);*/
     border-radius: 15px;
     display: flex;
     vertical-align: middle;
     margin: 5px 30px 5px 0px;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+
+}
+
+
+.textoPronostico {
+    display: block;
+    /*border: dotted 2px rgb(213, 226, 25);*/
+    border-radius: 15px;
+    text-align: center;
+    margin: 0px 0px 15px;
+    font-size: 2.2em;
+    font-weight: lighter;
 
 }
 

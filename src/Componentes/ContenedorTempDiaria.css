@@ -1,11 +1,11 @@
 .claseContenedorTemp1 {
     
-    border: dotted 2px violet;
+    border: double 4px #37b2e6ff;
     border-radius: 15px;
     font-size: 1em;
     text-align: center;
     margin: 0px;
-    padding: 15px;
+    padding: 5px;
    
 }
 

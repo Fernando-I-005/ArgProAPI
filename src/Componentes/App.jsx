@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppClima } from "./AppClima";
-import { AppTransito } from "./AppTransito";
+import { AppTransporte } from "./AppTransporte";
 import "./App.css"
 
 export const App = () => {
@@ -11,7 +11,7 @@ export const App = () => {
       </div>
 
       <div className="mediaPantallaTransito">
-        <AppTransito />
+        <AppTransporte />
       </div>
 
     </div>
