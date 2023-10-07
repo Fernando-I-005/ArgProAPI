@@ -4,8 +4,6 @@ import "./ContenedorPrincipal.css"
 import { TMaxMin } from './TMaxMin'
 
 
-
-
 export const ContenedorPrincipal = ({ciudad, fecha,hora,tempActual,unidadTemp, imagenPronostico, textoPronostico, tempMax, tempMin}) => {
   return (
     <section className='contenedorSeccion'>
@@ -23,7 +21,6 @@ export const ContenedorPrincipal = ({ciudad, fecha,hora,tempActual,unidadTemp, i
       <div>
       <h1 className='textoPronostico'>  {textoPronostico} </h1>
       </div>
-
 
       <div className='contenedorMaxMin'>
         <TMaxMin tempMaxMin={tempMin} textoMaxMin={"Min:"} unidadTemp={unidadTemp} />

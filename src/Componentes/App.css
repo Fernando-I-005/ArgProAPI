@@ -1,4 +1,4 @@
-/*
+/* colores paleta de colores
 $denim: #2e5eaaff;
 $picton-blue: #37b2e6ff;
 $lemon-chiffon: #faf0caff;
@@ -11,7 +11,7 @@ $bright-pink-crayola: #f7567cff;
   height: 100vh;
   color:#faf0caff ;
   border: 3px solid #fed9b7ff;
-  /* Esto asegura que la altura del contenedor sea igual a la altura de la ventana del navegador */
+
 }
 
 .mediaPantallaClima {
@@ -22,7 +22,7 @@ $bright-pink-crayola: #f7567cff;
   border: 2px solid #ccc;
   background-color: #37b2e6ff;
   border-radius: 8px;
-  /* Solo para propósitos de demostración, puedes eliminar esto */
+
 }
 
 .mediaPantallaTransito {
@@ -33,7 +33,7 @@ $bright-pink-crayola: #f7567cff;
   border: 2px solid #ccc;
   background-color: #fbacbeff;
   border-radius: 8px;
-  /* Solo para propósitos de demostración, puedes eliminar esto */
+ 
 }
 
 
