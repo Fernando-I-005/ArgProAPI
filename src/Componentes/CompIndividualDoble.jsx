@@ -9,10 +9,10 @@ export const CompIndividualDoble = ({ categoria, valor, valor2, unidad1, unidad2
                 {categoria}
             </div>
             <div className='nombreValor'>
-                {valor}
-                <span className='nombreUnidad'>{unidad1}</span>
+                {valor} 
+                <span className='nombreUnidad'>{unidad1}</span><span> / </span>
                 {valor2}
-                <span className='nombreUnidad'>{unidad2}</span>
+                <span className='nombreUnidad'>{unidad2} </span>
             </div>
         </div>
 

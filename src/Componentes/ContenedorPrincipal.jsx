@@ -11,7 +11,7 @@ export const ContenedorPrincipal = ({ciudad, fecha,hora,tempActual,unidadTemp, i
     <section className='contenedorSeccion'>
       <div className="claseContenedorLugarHora">
         <h5 className='lugar'>{ciudad} </h5>
-        <h6 className='hora'>  {fecha} {hora} </h6>
+        <h6 className='hora'>  {hora}hs  ~<span> </span> {fecha} </h6>
       </div>
 
       <section className="claseContenedorGrande">

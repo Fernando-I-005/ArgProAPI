@@ -8,9 +8,9 @@
 .claseContenedorLugarHora {
     /*border: dotted 2px #faf0caff;*/
     border-radius: 15px;
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-align: center;
-    margin: px 0px;
+    margin: 0px 0px;
 }
 
 .contenedorMaxMin {
@@ -37,7 +37,7 @@
     /*border: dotted 2px rgb(213, 226, 25);*/
     border-radius: 15px;
     margin: 0px;
-    font-size: 1.6em;
+    font-size: 1.4em;
     
 }
 
@@ -52,7 +52,7 @@
     border-radius: 15px;
     display: inline;
     justify-content: center;
-    font-size: 6em;
+    font-size: 5.5em;
     margin: 0px 0px 0px 30px;
 
 }
@@ -71,9 +71,9 @@
     border-radius: 15px;
     display: flex;
     vertical-align: middle;
-    margin: 5px 30px 5px 0px;
-    width: 250px;
-    height: 250px;
+    margin: 5px 3px 0px 0px;
+    width: 280px;
+    height: 280px;
 
 }
 
@@ -84,7 +84,7 @@
     border-radius: 15px;
     text-align: center;
     margin: 0px 0px 15px;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: lighter;
 
 }

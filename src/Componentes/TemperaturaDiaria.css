@@ -2,12 +2,13 @@
     /*border: dotted 2px #faf0caff;*/
     border-radius: 8px;
     text-align: center;
-    margin: 10px;
+    margin: 7px;
     display: inline-block;
 }
 
 .tValor {
     font-size: 1.2em;
+    margin: 0px;
 }
 
 .tValorUnidad {
@@ -17,4 +18,11 @@
 .horaValor {
     font-size: 0.7em;
     color: white
+}
+
+.imagen{
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
 }

@@ -9,7 +9,7 @@ export const CompIndividual = ({ categoria, valor, unidad }) => {
             </div>
 
             <div className='nombreValor'>
-                {valor}
+                {valor}<span>  </span>
                 <span className='nombreUnidad'>{unidad}</span>
             </div>
         </div>
