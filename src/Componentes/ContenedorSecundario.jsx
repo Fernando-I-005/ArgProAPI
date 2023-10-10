@@ -3,11 +3,13 @@ import "./ContenedorSecundario.css"
 import { CompIndividual } from "./CompIndividual"
 import { CompIndividualDoble } from './CompIndividualDoble'
 
-export const ContenedorSecundario = ({ valorIndiceUV, valorViento, unidadViento, valorHoraAmanecer, valorHoraAtardecer, valorHumedad, unidadHumedad, valorVisibilidad, unidadVisibilidad, valorPresion, unidadPresion, direccionViento }) => {
+export const ContenedorSecundario = ({ valorIndiceUV, valorViento, unidadViento, valorHoraAmanecer, valorHoraAtardecer, valorHumedad, unidadHumedad, valorVisibilidad, unidadVisibilidad, valorPresion, unidadPresion, direccionViento,textoIndiceUV }) => {
   return (
     <div className='claseContenedorSecundario'>
       <div className='claseBloque'>
-        <CompIndividual categoria="Indice UV" valor={valorIndiceUV} />
+        
+        <CompIndividualDoble categoria="Indice UV" valor={valorIndiceUV} valor2={textoIndiceUV} />
+
         <CompIndividualDoble categoria="Viento / Dirección" valor={valorViento} unidad1={unidadViento}  valor2={direccionViento} />
         <CompIndividualDoble categoria="Amanecer / Atardecer" valor={valorHoraAmanecer} valor2={valorHoraAtardecer}  />
       </div>

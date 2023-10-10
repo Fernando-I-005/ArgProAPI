@@ -74,34 +74,34 @@ const texto99 = "Tormentas con probabilidad alta de granizo"
 
 //objeto de codigo meteorologico NO ES JSON!!
 const codigoMeteorologico = {
-  0: [texto0, img0Dia, img0Noche],
-  1: [texto1, img1Dia, img1Noche],
-  2: [texto2, img2Dia, img2Noche],
-  3: [texto3, img3],
-  45: [texto45, img45],
-  48: [texto48, img48],
-  51: [texto51, img51],
-  53: [texto53, img53],
-  55: [texto55, img55],
-  56: [texto56, img56],
-  57: [texto57, img57],
-  61: [texto61, img61],
-  63: [texto63, img63],
-  65: [texto65, img65],
-  66: [texto66, img66],
-  67: [texto67, img67],
-  71: [texto71, img71],
-  73: [texto73, img73],
-  75: [texto75, img75],
-  77: [texto77, img77],
-  80: [texto80, img80Dia, img80Noche],
-  81: [texto81, img81Dia, img81Noche],
-  82: [texto82, img82Dia, img82Noche],
-  85: [texto85, img85],
-  86: [texto86, img86],
-  95: [texto95, img95],
-  96: [texto96, img96],
-  99: [texto99, img99]
+       0: [texto0, img0Dia, img0Noche],
+       1: [texto1, img1Dia, img1Noche],
+       2: [texto2, img2Dia, img2Noche],
+       3: [texto3, img3],
+       45: [texto45, img45],
+       48: [texto48, img48],
+       51: [texto51, img51],
+       53: [texto53, img53],
+       55: [texto55, img55],
+       56: [texto56, img56],
+       57: [texto57, img57],
+       61: [texto61, img61],
+       63: [texto63, img63],
+       65: [texto65, img65],
+       66: [texto66, img66],
+       67: [texto67, img67],
+       71: [texto71, img71],
+       73: [texto73, img73],
+       75: [texto75, img75],
+       77: [texto77, img77],
+       80: [texto80, img80Dia, img80Noche],
+       81: [texto81, img81Dia, img81Noche],
+       82: [texto82, img82Dia, img82Noche],
+       85: [texto85, img85],
+       86: [texto86, img86],
+       95: [texto95, img95],
+       96: [texto96, img96],
+       99: [texto99, img99]
 }
 
 // constantes de unidades desde api
@@ -123,7 +123,7 @@ const horaActualSinMinutos = soloHoraActual.split(':')[0]; // Divide usando ':' 
 
 //CONSTANTES DE VALORES A CARGAR
 const horaAmanecer = (jsonClima["daily"]["sunrise"][0]).split('T')[1]    // es una lista lpm!!
-const horaAtardecer = (jsonClima["daily"]["sunrise"][0]).split('T')[1]
+const horaAtardecer = (jsonClima["daily"]["sunset"][0]).split('T')[1]
 const indiceUV = jsonClima["daily"]["uv_index_max"]
 const viento = jsonClima["current_weather"]["windspeed"]
 const direccionVientoEnGrados = jsonClima["current_weather"]["winddirection"]
@@ -143,94 +143,120 @@ let imagenClimaActualenApp  // declaro variable que asigna imagen segun codigo W
 
 
 //condicional que asigna imagen segun sea de noche o de dia
-if ((((codigoMeteorologico[(codigoWWAPI)]).length) > 1) && (horaActualSinMinutos > 19)) {  // establece imagen
-  imagenClimaActualenApp = (codigoMeteorologico[codigoWWAPI][2]);
+if ((((codigoMeteorologico[(codigoWWAPI)]).length) > 2) && (horaActualSinMinutos > 19)) {  // establece imagen
+       imagenClimaActualenApp = (codigoMeteorologico[codigoWWAPI][2]);
 } else {
-  imagenClimaActualenApp = (codigoMeteorologico[codigoWWAPI][1])
+       imagenClimaActualenApp = (codigoMeteorologico[codigoWWAPI][1])
 }
 
 // funcion que convierte grados en direccion cardinal
 function convertirGradosEnCardinal() {
-  if ((direccionVientoEnGrados >= 0 && direccionVientoEnGrados <= 11) || (direccionVientoEnGrados > 349 && direccionVientoEnGrados <= 360)) {
-         direccionVientoCardinal = "N";
-  } else if (direccionVientoEnGrados > 11 && direccionVientoEnGrados <= 34) {
-         direccionVientoCardinal = "NNE";
-  } else if (direccionVientoEnGrados > 34 && direccionVientoEnGrados <= 56) {
-         direccionVientoCardinal = "NE";
-  } else if (direccionVientoEnGrados > 56 && direccionVientoEnGrados <= 79) {
-         direccionVientoCardinal = "ENE";
-  } else if (direccionVientoEnGrados > 79 && direccionVientoEnGrados <= 101) {
-         direccionVientoCardinal = "E";
-  } else if (direccionVientoEnGrados > 101 && direccionVientoEnGrados <= 124) {
-         direccionVientoCardinal = "ESE";
-  } else if (direccionVientoEnGrados > 124 && direccionVientoEnGrados <= 146) {
-         direccionVientoCardinal = "SE";
-  } else if (direccionVientoEnGrados > 146 && direccionVientoEnGrados <= 169) {
-         direccionVientoCardinal = "SSE";
-  } else if (direccionVientoEnGrados > 169 && direccionVientoEnGrados <= 191) {
-         direccionVientoCardinal = "S";
-  } else if (direccionVientoEnGrados > 191 && direccionVientoEnGrados <= 214) {
-         direccionVientoCardinal = "SSO";
-  } else if (direccionVientoEnGrados > 214 && direccionVientoEnGrados <= 236) {
-         direccionVientoCardinal = "SO";
-  } else if (direccionVientoEnGrados > 236 && direccionVientoEnGrados <= 259) {
-         direccionVientoCardinal = "OSO";
-  } else if (direccionVientoEnGrados > 259 && direccionVientoEnGrados <= 281) {
-         direccionVientoCardinal = "O";
-  } else if (direccionVientoEnGrados > 281 && direccionVientoEnGrados <= 303) {
-         direccionVientoCardinal = "ONO";
-  } else if (direccionVientoEnGrados > 303 && direccionVientoEnGrados <= 326) {
-         direccionVientoCardinal = "NO";
-  } else if (direccionVientoEnGrados > 326 && direccionVientoEnGrados <= 349) {
-         direccionVientoCardinal = "NNO";
-  } else { direccionVientoCardinal = "Error"; }
-  return direccionVientoCardinal;
+       if ((direccionVientoEnGrados >= 0 && direccionVientoEnGrados <= 11) || (direccionVientoEnGrados > 349 && direccionVientoEnGrados <= 360)) {
+              direccionVientoCardinal = "N";
+       } else if (direccionVientoEnGrados > 11 && direccionVientoEnGrados <= 34) {
+              direccionVientoCardinal = "NNE";
+       } else if (direccionVientoEnGrados > 34 && direccionVientoEnGrados <= 56) {
+              direccionVientoCardinal = "NE";
+       } else if (direccionVientoEnGrados > 56 && direccionVientoEnGrados <= 79) {
+              direccionVientoCardinal = "ENE";
+       } else if (direccionVientoEnGrados > 79 && direccionVientoEnGrados <= 101) {
+              direccionVientoCardinal = "E";
+       } else if (direccionVientoEnGrados > 101 && direccionVientoEnGrados <= 124) {
+              direccionVientoCardinal = "ESE";
+       } else if (direccionVientoEnGrados > 124 && direccionVientoEnGrados <= 146) {
+              direccionVientoCardinal = "SE";
+       } else if (direccionVientoEnGrados > 146 && direccionVientoEnGrados <= 169) {
+              direccionVientoCardinal = "SSE";
+       } else if (direccionVientoEnGrados > 169 && direccionVientoEnGrados <= 191) {
+              direccionVientoCardinal = "S";
+       } else if (direccionVientoEnGrados > 191 && direccionVientoEnGrados <= 214) {
+              direccionVientoCardinal = "SSO";
+       } else if (direccionVientoEnGrados > 214 && direccionVientoEnGrados <= 236) {
+              direccionVientoCardinal = "SO";
+       } else if (direccionVientoEnGrados > 236 && direccionVientoEnGrados <= 259) {
+              direccionVientoCardinal = "OSO";
+       } else if (direccionVientoEnGrados > 259 && direccionVientoEnGrados <= 281) {
+              direccionVientoCardinal = "O";
+       } else if (direccionVientoEnGrados > 281 && direccionVientoEnGrados <= 303) {
+              direccionVientoCardinal = "ONO";
+       } else if (direccionVientoEnGrados > 303 && direccionVientoEnGrados <= 326) {
+              direccionVientoCardinal = "NO";
+       } else if (direccionVientoEnGrados > 326 && direccionVientoEnGrados <= 349) {
+              direccionVientoCardinal = "NNO";
+       } else { direccionVientoCardinal = "Error"; }
+       return direccionVientoCardinal;
 }
 
 
+// funcion que asigna indice UV en texto
+let textoIndiceUV
+function convertirUVaTexto(indiceUV) {
+       if (indiceUV >= 0 && indiceUV <= 2) {
+              textoIndiceUV = "Bajo";
+       } else if (indiceUV >2 && indiceUV <= 5) {
+              textoIndiceUV = "Moderado";
+       } else if (indiceUV >5 && indiceUV <= 7) {
+              textoIndiceUV = "Alto";
+       } else if (indiceUV >7 && indiceUV <= 10) {
+              textoIndiceUV = "Muy alto";
+       } else if (indiceUV >10 && indiceUV <= 20) {
+              textoIndiceUV = "Extremo";
+       } else { textoIndiceUV = "Error"; }
+       return textoIndiceUV;
+}
+
+textoIndiceUV = convertirUVaTexto(indiceUV)
+//console.log(indiceUV)
+
+
+
+
+
+
 export const AppClima = () => {
-  return (
-    <div className="estiloAppClima">
+       return (
+              <div className="estiloAppClima">
 
-      <ContenedorPrincipal
-        ciudad="Bariloche"
-        hora={soloHoraActual}
-        fecha={soloFechaActual}
-        tempActual={jsonClima["current_weather"]["temperature"]}
-        unidadTemp={unidadtemperatura}
-        imagenPronostico={imagenClimaActualenApp}
-        textoPronostico={textoClimaActualenApp}
-        tempMax={jsonClima["daily"]["temperature_2m_max"]}
-        tempMin={jsonClima["daily"]["temperature_2m_min"]}
-      />
-      <ContenedorTempDiaria
-        temp00={jsonClima["hourly"]["temperature_2m"][0]}
-        temp03={jsonClima["hourly"]["temperature_2m"][3]}
-        temp06={jsonClima["hourly"]["temperature_2m"][6]}
-        temp09={jsonClima["hourly"]["temperature_2m"][9]}
-        temp12={jsonClima["hourly"]["temperature_2m"][12]}
-        temp15={jsonClima["hourly"]["temperature_2m"][15]}
-        temp18={jsonClima["hourly"]["temperature_2m"][18]}
-        temp21={jsonClima["hourly"]["temperature_2m"][21]}
-        temp24={jsonClima["hourly"]["temperature_2m"][23]}
-        unidadTemp={unidadtemperatura} />
+                     <ContenedorPrincipal
+                            ciudad="Bariloche"
+                            hora={soloHoraActual}
+                            fecha={soloFechaActual}
+                            tempActual={jsonClima["current_weather"]["temperature"]}
+                            unidadTemp={unidadtemperatura}
+                            imagenPronostico={imagenClimaActualenApp}
+                            textoPronostico={textoClimaActualenApp}
+                            tempMax={jsonClima["daily"]["temperature_2m_max"]}
+                            tempMin={jsonClima["daily"]["temperature_2m_min"]}
+                     />
+                     <ContenedorTempDiaria
+                            temp00={jsonClima["hourly"]["temperature_2m"][0]}
+                            temp03={jsonClima["hourly"]["temperature_2m"][3]}
+                            temp06={jsonClima["hourly"]["temperature_2m"][6]}
+                            temp09={jsonClima["hourly"]["temperature_2m"][9]}
+                            temp12={jsonClima["hourly"]["temperature_2m"][12]}
+                            temp15={jsonClima["hourly"]["temperature_2m"][15]}
+                            temp18={jsonClima["hourly"]["temperature_2m"][18]}
+                            temp21={jsonClima["hourly"]["temperature_2m"][21]}
+                            temp24={jsonClima["hourly"]["temperature_2m"][23]}
+                            unidadTemp={unidadtemperatura} />
 
-      <ContenedorSecundario
-        valorIndiceUV={indiceUV}
-        valorViento={viento}
-        unidadViento={unidadViento}
-        direccionViento={direccionVientoCardinal}
-        valorHoraAmanecer={horaAmanecer}
-        valorHoraAtardecer={horaAtardecer}
-        valorHumedad={humedadEnLaHora}
-        unidadHumedad={unidadHumedad}
-        valorVisibilidad={visibilidadEnLaHora}
-        unidadVisibilidad={unidadVisibilidad}
-        valorPresion={presionEnLaHora}
-        unidadPresion={unidadPresion}
-      />
-    </div>
-  )
+                     <ContenedorSecundario
+                            valorIndiceUV={indiceUV}
+                            valorViento={viento}
+                            unidadViento={unidadViento}
+                            direccionViento={direccionVientoCardinal}
+                            valorHoraAmanecer={horaAmanecer}
+                            valorHoraAtardecer={horaAtardecer}
+                            valorHumedad={humedadEnLaHora}
+                            unidadHumedad={unidadHumedad}
+                            valorVisibilidad={visibilidadEnLaHora}
+                            unidadVisibilidad={unidadVisibilidad}
+                            valorPresion={presionEnLaHora}
+                            unidadPresion={unidadPresion}
+                            textoIndiceUV={textoIndiceUV}
+                     />
+              </div>
+       )
 }
 
 
