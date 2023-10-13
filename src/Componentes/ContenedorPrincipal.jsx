@@ -4,12 +4,13 @@ import "./ContenedorPrincipal.css"
 import { TMaxMin } from './TMaxMin'
 
 
-export const ContenedorPrincipal = ({ciudad, fecha,hora,tempActual,unidadTemp, imagenPronostico, textoPronostico, tempMax, tempMin}) => {
+export const ContenedorPrincipal = ({ ciudad, fecha, hora, tempActual, unidadTemp, imagenPronostico, textoPronostico, tempMax, tempMin }) => {
   return (
     <section className='contenedorSeccion'>
       <div className="claseContenedorLugarHora">
         <h5 className='lugar'>{ciudad} </h5>
-        <h6 className='hora'>  {hora}hs  ~<span> </span> {fecha} </h6>
+        <h5 className='fecha'>  {fecha} </h5>
+        <h6 className='hora'>  {hora} hs </h6>
       </div>
 
       <section className="claseContenedorGrande">
@@ -19,12 +20,12 @@ export const ContenedorPrincipal = ({ciudad, fecha,hora,tempActual,unidadTemp, i
       </section>
 
       <div>
-      <h1 className='textoPronostico'>  {textoPronostico} </h1>
+        <h1 className='textoPronostico'>  {textoPronostico} </h1>
       </div>
 
       <div className='contenedorMaxMin'>
         <TMaxMin tempMaxMin={tempMin} textoMaxMin={"Min:"} unidadTemp={unidadTemp} />
-        <TMaxMin tempMaxMin={tempMax} textoMaxMin={"Max:"} unidadTemp={unidadTemp}/>
+        <TMaxMin tempMaxMin={tempMax} textoMaxMin={"Max:"} unidadTemp={unidadTemp} />
       </div>
     </section>
   )

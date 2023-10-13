@@ -9,7 +9,7 @@ $bright-pink-crayola: #f7567cff;
 .contenedorApp {
   display: flex;
   height: 100vh;
-  color:#faf0caff ;
+  color: #faf0caff;
   border: 3px solid #fed9b7ff;
 
 }
@@ -22,6 +22,7 @@ $bright-pink-crayola: #f7567cff;
   border: 2px solid #ccc;
   background-color: #37b2e6ff;
   border-radius: 8px;
+  
 
 }
 
@@ -33,8 +34,24 @@ $bright-pink-crayola: #f7567cff;
   border: 2px solid #ccc;
   background-color: #fbacbeff;
   border-radius: 8px;
- 
+
 }
 
+.textocargando {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.imagenCargando {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  margin: 5px;
+  
 
 
+
+}

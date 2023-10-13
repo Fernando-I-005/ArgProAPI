@@ -46,7 +46,15 @@
     /*border: dotted 2px rgb(213, 226, 25);*/
     border-radius: 15px;
     margin: 0px;
+    text-align: center;
 }
+.fecha {
+    /*border: dotted 2px rgb(213, 226, 25);*/
+    border-radius: 15px;
+    margin: 0px;
+    text-align:center;
+}
+
 
 .temperaturaPrincipal {
     /*border: dotted 2px rgb(213, 226, 25);*/
