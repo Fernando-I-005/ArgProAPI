@@ -10,7 +10,7 @@
     border-radius: 15px;
     font-size: 1.6em;
     text-align: center;
-    margin: 00px 0px;
+    margin: 0px 0px;
 }
 
 .contenedorMaxMin {
@@ -40,6 +40,7 @@
     font-size: 1.4em;
     background-color: #faf0caff;
     color: #2e5eaaff ;
+    
 }
  
 .hora {
@@ -47,12 +48,14 @@
     border-radius: 15px;
     margin: 0px;
     text-align: center;
+    text-shadow: black -1px -1px;
 }
 .fecha {
     /*border: dotted 2px rgb(213, 226, 25);*/
     border-radius: 15px;
     margin: 0px;
     text-align:center;
+    text-shadow: black -1px -1px;
 }
 
 
@@ -63,6 +66,7 @@
     justify-content: center;
     font-size: 5em;
     margin: 0px 0px 0px 0px;
+    text-shadow: black -1px -1px;
 
 }
 
@@ -72,6 +76,7 @@
     display: inline;
     font-size: 3em;
     margin: 0px 0px 0px 0px;
+    text-shadow: black -1px -1px;
 
 }
 
@@ -81,8 +86,9 @@
     display: flex;
     vertical-align: middle;
     margin: 5px 3px 0px 0px;
-    width: 300px;
-    height: 300px;
+    width: 35vh;
+   
+    
 
 }
 
@@ -96,8 +102,9 @@
     font-size: 2em;
     background-color:#37b2e6ff;
     color: #2e5eaaff ;
-    max-width: 500px;
+    max-width: 50vh;
     justify-content: center;
+    text-shadow: #faf0caff -1px -1px;
     
 
 }

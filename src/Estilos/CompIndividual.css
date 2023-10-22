@@ -5,7 +5,7 @@
     font-size: 1.2em;
     text-align: center;
     margin: 5px;
-    width: 200px;
+    width: 21vh;
 }
 
 .ClaseBloque {
@@ -15,12 +15,15 @@
 .nombreParametro{
     font-size: 0.9em;
     color:#37b2e6ff;
+    text-shadow: black -1px -1px;
 }
 
 .nombreValor{
-    font-size: 1em;  
+    font-size: 1em; 
+    text-shadow: black -1px -1px; 
 }
 
 .nombreUnidad{
-    font-size: 0.7em;  
+    font-size: 0.7em;
+    text-shadow: black -1px -1px;  
 }

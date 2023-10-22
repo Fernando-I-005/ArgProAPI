@@ -22,7 +22,7 @@ $bright-pink-crayola: #f7567cff;
   border: 2px solid #ccc;
   background-color: #37b2e6ff;
   border-radius: 8px;
-  
+  ;
 
 }
 
@@ -50,8 +50,4 @@ $bright-pink-crayola: #f7567cff;
   justify-content: center;
   width: 80px;
   margin: 5px;
-  
-
-
-
 }

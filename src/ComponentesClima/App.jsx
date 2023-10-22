@@ -1,10 +1,9 @@
 import React from 'react';
 import { AppClima } from "./AppClima";
-import { AppTransporte } from "./AppTransporte";
-import "./App.css"
+import { AppTransporte } from "../ComponentesTransporte/AppTransporte";
+import "../Estilos/App.css"
 import { useEffect, useState } from "react"
 import cargandov3 from "../recursos/cargandoV3.svg"
-
 
 
 
@@ -28,7 +27,6 @@ export const App = () => {
   }, []);
 
 
- 
   return (
     <>
       {/* renderizado para estado de cargando activo y jsonClima sin recibir*/}
@@ -56,8 +54,6 @@ export const App = () => {
       </div>
 
 
-
-
       {/* renderizado para estado de cargado desactivado y jsonClima2 recibido */}
       <div>
         {!cargando && jsonClima2 && (
@@ -76,26 +72,8 @@ export const App = () => {
         )}</div>
 
     </>
-
   )
 
 }
 
-/*
 
-  return (  
-    <div className="contenedorApp">
-      <div className="mediaPantallaClima" >
-        <AppClima 
-          jsonClima={jsonClima2}
-        />
-      </div>
-
-      <div className="mediaPantallaTransito">
-        <AppTransporte />
-      </div>
-
-    </div>
-  )
-}
-*/

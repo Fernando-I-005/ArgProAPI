@@ -2,27 +2,30 @@
     /*border: dotted 2px #faf0caff;*/
     border-radius: 8px;
     text-align: center;
-    margin: 7px;
+    margin: 5px;
     display: inline-block;
 }
 
 .tValor {
     font-size: 1.2em;
     margin: 0px;
+    text-shadow: black -1px -1px;
 }
 
 .tValorUnidad {
     font-size: 0.8em;
+    text-shadow: black -1px -1px;
 }
 
 .horaValor {
     font-size: 0.9em;
-    color:#37b2e6ff
-}
+    color:#37b2e6ff;
+    text-shadow: black -1px -1px;
+    }
 
-.imagen{
+/*.imagen{
     width: 60px;
     height: 60px;
     margin: 0px;
     padding: 0px;
-}
+}*/

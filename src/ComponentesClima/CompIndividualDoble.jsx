@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CompIndividual.css"
+import "../Estilos/CompIndividual.css"
 
 export const CompIndividualDoble = ({ categoria, valor, valor2, unidad1, unidad2 }) => {
     return (

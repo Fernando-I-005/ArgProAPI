@@ -1,5 +1,5 @@
 import React from 'react'
-import "./AppClima.css"
+import "../Estilos/AppClima.css"
 import { ContenedorPrincipal } from './ContenedorPrincipal.jsx'
 import { ContenedorSecundario } from "./ContenedorSecundario"
 import { ContenedorTempDiaria } from "./ContenedorTempDiaria"
@@ -76,6 +76,7 @@ export const AppClima = ({ jsonClima }) => {
        const texto95 = "Tormentas"
        const texto96 = "Tormentas con probabilidad baja de granizo"
        const texto99 = "Tormentas con probabilidad alta de granizo"
+
 
        //objeto de codigo meteorologico NO ES JSON!!
        const codigoMeteorologico = {
@@ -220,7 +221,7 @@ export const AppClima = ({ jsonClima }) => {
               <div className="estiloAppClima">
 
                      {<ContenedorPrincipal
-                            ciudad="Bariloche"
+                            ciudad="Clima en Bariloche"
                             hora={soloHoraActual}
                             fecha={soloFechaActual}
                             tempActual={jsonClima["current_weather"]["temperature"]}
@@ -241,7 +242,7 @@ export const AppClima = ({ jsonClima }) => {
                             temp21={jsonClima["hourly"]["temperature_2m"][21]}
                             temp24={jsonClima["hourly"]["temperature_2m"][23]}
                             unidadTemp={jsonClima["current_weather_units"]["temperature"]
-                     } />
+                            } />
 
                      {<ContenedorSecundario
                             valorIndiceUV={indiceUV}

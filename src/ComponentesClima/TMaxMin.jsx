@@ -1,5 +1,5 @@
 import React from 'react'
-import "./TMaxMin.css"
+import "../Estilos/TMaxMin.css"
 
 export const TMaxMin = ({tempMaxMin, textoMaxMin, unidadTemp}) => {
     return (

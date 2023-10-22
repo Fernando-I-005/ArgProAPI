@@ -1,5 +1,5 @@
 import React from 'react'
-import "./TemperaturaDiaria.css"
+import "../Estilos/TemperaturaDiaria.css"
 
 export const TemperaturaDiaria = ({ temperatura, hora ,unidadTemp }) => {
   return (
@@ -12,9 +12,7 @@ export const TemperaturaDiaria = ({ temperatura, hora ,unidadTemp }) => {
 
 
       <div className='horaValor' >
-        {hora}
-        <img />
-        
+        {hora}    
       </div>
 
     </div>

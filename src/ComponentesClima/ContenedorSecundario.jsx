@@ -1,7 +1,9 @@
 import React from 'react'
-import "./ContenedorSecundario.css"
+import "../Estilos/ContenedorSecundario.css"
 import { CompIndividual } from "./CompIndividual"
 import { CompIndividualDoble } from './CompIndividualDoble'
+
+
 
 export const ContenedorSecundario = ({ valorIndiceUV, valorViento, unidadViento, valorHoraAmanecer, valorHoraAtardecer, valorHumedad, unidadHumedad, valorVisibilidad, unidadVisibilidad, valorPresion, unidadPresion, direccionViento,textoIndiceUV }) => {
   return (

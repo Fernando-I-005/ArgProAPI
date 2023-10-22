@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ContenedorPrincipal.css"
+import "../Estilos/ContenedorPrincipal.css"
 
 import { TMaxMin } from './TMaxMin'
 

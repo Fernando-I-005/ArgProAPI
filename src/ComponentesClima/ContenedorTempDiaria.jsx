@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ContenedorTempDiaria.css"
+import "../Estilos/ContenedorTempDiaria.css"
 import { TemperaturaDiaria } from './TemperaturaDiaria'
 
 export const ContenedorTempDiaria = ({temp00,temp03,temp06,temp09,temp12, temp15, temp18, temp21, temp24, unidadTemp,horaDiaria12AM}) => {

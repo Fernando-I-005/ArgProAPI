@@ -1,0 +1,44 @@
+.claseContenedorPrincipalTransporte {
+    display: block;
+    border: double 4px #fbacbeff;
+    padding: 10px 8px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.textoTituloTransporte {
+    display: block;
+    /*border: dotted 2px rgb(213, 226, 25);*/
+    border-radius: 15px;
+    text-align: center;
+    margin: 5px auto ;
+    font-size: 2.1em;
+    background-color:#faf0caff;
+    color: #f7567cff ;
+    max-width: 68vh;
+    justify-content: center;
+    text-shadow: #faf0caff -1px -1px;
+    padding: 3px;  
+}
+
+.textoImput {
+    display: block;
+    border: solid 1px #fbacbeff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto ;
+    font-size: 1.2em;
+    background-color:#f7567cff;
+    color:#faf0caff ;
+    justify-content: center;
+    text-shadow: rgb(20, 20, 20) -1px -1px; 
+    width: 40vh;
+    padding: 3px;
+    font-weight: bold;
+    
+    
+}
+
+

@@ -102,8 +102,8 @@ const texto99_tormentasGranizoIntenso = "Tormentas con probabilidad alta de gran
 const img99_tormentasGranizoIntenso = "../recursos/99-tormentaGranizoFuerte.svg"
 
 
-const imgClimaActual
-const textoClimaActual
+
+
 
 
 
@@ -116,10 +116,10 @@ const unidadPresion = "hPa de Json"
 
 const imagenPronostico = { imagen01Soleado }
 const unidadTemp = { unidadtemperatura } verrrrrrrrrrr
-const unidadPresion = { unidadPresion }
-const unidadViento = { unidadViento }
-const unidadHumedad = { unidadHumedad }
-const unidadVisibilidad = { unidadVisibilidad }
+//const unidadPresion = { unidadPresion }
+//const unidadViento = { unidadViento }
+//const unidadHumedad = { unidadHumedad }
+//const unidadVisibilidad = { unidadVisibilidad }
 
 
 
@@ -157,7 +157,7 @@ const valorHoraAtardecer = "18:00 de Json"
 const valorHumedad = "50 de Json"
 const valorVisibilidad = "6.9 de Json"
 const valorPresion = "1.050 de Json"
-const unidadPresion = { unidadPresion }
+//const unidadPresion = { unidadPresion }
 //const unidadViento={unidadViento}
 //const unidadHumedad={unidadHumedad}
 //const unidadVisibilidad={unidadVisibilidad}
