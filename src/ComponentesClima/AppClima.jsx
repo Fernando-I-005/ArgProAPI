@@ -77,7 +77,6 @@ export const AppClima = ({ jsonClima }) => {
        const texto96 = "Tormentas con probabilidad baja de granizo"
        const texto99 = "Tormentas con probabilidad alta de granizo"
 
-
        //objeto de codigo meteorologico NO ES JSON!!
        const codigoMeteorologico = {
               0: [texto0, img0Dia, img0Noche],
@@ -138,7 +137,7 @@ export const AppClima = ({ jsonClima }) => {
 
        //valores de parametros (humedad, presion y visibilidad) en la hora actual 
        // horaActualSinMinutos coincide con el indice de los parametros en el momento !!!genial
-       console.log(horaActualSinMinutos)
+       
        const humedadEnLaHora = jsonClima["hourly"]["relativehumidity_2m"][horaActualSinMinutos]
        const presionEnLaHora = jsonClima["hourly"]["pressure_msl"][horaActualSinMinutos]
        const visibilidadEnLaHora = jsonClima["hourly"]["visibility"][horaActualSinMinutos]

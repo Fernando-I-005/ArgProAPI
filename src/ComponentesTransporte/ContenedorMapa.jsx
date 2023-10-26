@@ -10,17 +10,29 @@ import "../Estilos/ContenedorMapa.css"
 export const ContenedorMapa = ({ jsonFiltradoPorLinea }) => {
 
 
+// toma el jsonFiltradoPorLinea y crea un nuevo json al cual le agrega un campo "estado" y lo completa segun una condicion con "en movimiento" o "detenido"
+    const jsonFiltradoPorLineaCompleto = jsonFiltradoPorLinea.map(item => {
+        // Comprueba si la velocidad es mayor a cero
+        if (item.speed > 0) {
+          item.estado = "en movimiento";
+        } else {
+          item.estado = "detenido";
+        }
+        return item;
+      });
+
+
     return (
         <div>
 
             <MapContainer center={[-34.60376, -58.38162]} zoom={10} scrollWheelZoom={true}>
 
                 <TileLayer
-                    attribution='<a>Aguante River</a>'
+                    attribution='<a>Curso Famat</a>'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                {jsonFiltradoPorLinea.map((colectivo, index) => {
+                {jsonFiltradoPorLineaCompleto.map((colectivo, index) => {
                     return (
 
                         <Marker position={[colectivo["latitude"], colectivo["longitude"]]}
@@ -34,8 +46,8 @@ export const ContenedorMapa = ({ jsonFiltradoPorLinea }) => {
                                 <div className='ventanaEmergente'>
                                     Linea: {colectivo["route_short_name"]} <br />
                                     Destino: {colectivo["trip_headsign"]} <br />
-                                    Velocidad: {(colectivo["speed"]).toFixed(2)} km/h <br />
-                                    Estado:
+                                    {/*Velocidad: {(colectivo["speed"]).toFixed(2)} km/h <br />*/}
+                                    Estado: {colectivo["estado"]}
                                 </div>
                             </Popup>
 

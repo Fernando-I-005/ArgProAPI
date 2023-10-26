@@ -16,12 +16,19 @@ export const ContenedorPrincipalTransporte = ({ jsonTransporte }) => {
 
   // funcion que ordena el arreglo primero por numero y luego por letras para que aparezca ordenado en el menu desplegable
   function compararElementos(a, b) {
+    const matchA = a.match(/[A-Z]+/);
+    const matchB = b.match(/[A-Z]+/);
+  
+    // Compruebe si matchA y matchB no son nulos antes de acceder a sus propiedades
+    const letraA = matchA ? matchA[0] : '';   // se modifica codigo para ignorar error por campo nulo
+    const letraB = matchB ? matchB[0] : '';
+  
     const numA = parseInt(a.match(/\d+/)[0]);
-    const numB = parseInt(b.match(/\d+/)[0]);
-
+    
+   
+  const numB = parseInt(b.match(/\d+/)[0]);         
+  
     if (numA === numB) {
-      const letraA = a.match(/[A-Z]+/)[0];
-      const letraB = b.match(/[A-Z]+/)[0];
       return letraA.localeCompare(letraB);
     } else {
       return numA - numB;

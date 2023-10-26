@@ -19,7 +19,7 @@ export const App = () => {
       .then((info) => {
         setjsonClima2(info); //luego de promesa guarda la info obtenida en jsonClima2
         setcargando(false);  //luego de promesa abandona el estado de cargando
-        console.log(info)
+        /*console.log(info)*/
       })
       .catch((ex) => {
         console.error(ex); // para manejar errores...verrrrrrrrrr
@@ -32,7 +32,7 @@ export const App = () => {
       {/* renderizado para estado de cargando activo y jsonClima sin recibir*/}
       <div>
         {cargando && (
-          <div className="contenedorApp">
+          <div className="npm start">
             <div className="mediaPantallaClima" >
 
               <div className='textocargando'>
