@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ArgProAPI/static/css/main.f9020038.css",
-    "main.js": "/ArgProAPI/static/js/main.e7918a47.js",
+    "main.js": "/ArgProAPI/static/js/main.45aa6c16.js",
     "static/media/iconoColectivo.png": "/ArgProAPI/static/media/iconoColectivo.1c4e0e58108524332de8.png",
     "static/media/66-LluviaHeladaLigera.svg": "/ArgProAPI/static/media/66-LluviaHeladaLigera.daa680dc3c3bbbea9984f06df34e67a5.svg",
     "static/media/67-LluviaHeladaIntensaRepetido.svg": "/ArgProAPI/static/media/67-LluviaHeladaIntensaRepetido.daa680dc3c3bbbea9984f06df34e67a5.svg",
@@ -40,10 +40,10 @@
     "static/media/1-CieloPrincipalmenteDespejadoDiaRepetido.svg": "/ArgProAPI/static/media/1-CieloPrincipalmenteDespejadoDiaRepetido.f1148f358aa1e13bee23b6cf1b54bac7.svg",
     "static/media/3-CubiertoNublado.svg": "/ArgProAPI/static/media/3-CubiertoNublado.8a5788db9979257e9e7f313cbf51dfe7.svg",
     "main.f9020038.css.map": "/ArgProAPI/static/css/main.f9020038.css.map",
-    "main.e7918a47.js.map": "/ArgProAPI/static/js/main.e7918a47.js.map"
+    "main.45aa6c16.js.map": "/ArgProAPI/static/js/main.45aa6c16.js.map"
   },
   "entrypoints": [
     "static/css/main.f9020038.css",
-    "static/js/main.e7918a47.js"
+    "static/js/main.45aa6c16.js"
   ]
 }
