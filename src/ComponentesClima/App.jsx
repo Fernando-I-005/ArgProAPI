@@ -60,8 +60,7 @@ export const App = () => {
           <div className="contenedorApp">
 
             <div className="mediaPantallaClima" >
-              <AppClima jsonClima={jsonClima2}
-              />
+              <AppClima jsonClima={jsonClima2}/>
             </div>
 
             <div className="mediaPantallaTransito">

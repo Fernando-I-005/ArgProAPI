@@ -24,7 +24,7 @@ Los usuarios tienen la flexibilidad de cambiar la línea de colectivos que desea
 
 ### Actualizaciones Automáticas
 
-La aplicación se actualiza automáticamente cada 31 segundos para proporcionar información en tiempo real sobre la ubicación de los colectivos.
+La aplicación se actualiza automáticamente cada 31 segundos para proporcionar información en tiempo real sobre la ubicación de los colectivos.*funcionalidad en desarrollo.
 
 ## Tecnologías Utilizadas
 
@@ -44,9 +44,9 @@ El diseño de la aplicación se centra en la simplicidad, la intuición y la sob
 
 ## Créditos
 
-- La aplicación fue desarrollada por [Nombre del Desarrollador/Equipo].
+- La aplicación fue desarrollada por Fernando Iglesias para el curso de Front-End de Sitio Web Usando API.
 - Los datos de ubicación de los colectivos son proporcionados por la API de Transporte de la Ciudad de Buenos Aires.
-- El ícono personalizado de colectivo se basa en [Mencionar la fuente o creador del icono].
+- El ícono personalizado de colectivo fue diseñado y coloreado con Photoshop.
 - La paleta de colores se generó con la ayuda de Coolors.
 
 ¡Gracias por utilizar nuestra aplicación de transporte de colectivos en Buenos Aires! Esperamos que esta herramienta te sea útil y eficiente para rastrear los colectivos en la ciudad y sus alrededores. Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.

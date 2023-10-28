@@ -6,19 +6,17 @@ $cherry-blossom-pink: #fbacbeff;
 $bright-pink-crayola: #f7567cff;
 */
 
-
 .estiloAppTransporte {
   background-color: #f7567cff;
-  padding: 20px;
+  padding: 25px 10px;
   border: solid #faf0caff;
   border-radius: 15px;
 
 }
 
-
 .leaflet-container {
-  width: 70vh;
-  height: 70vh;
+  width: 65vh;
+  height: 68vh;
   padding: 0px;
   /*margin: 30px;*/
   border-radius: 15px;

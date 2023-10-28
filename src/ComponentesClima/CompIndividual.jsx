@@ -2,17 +2,17 @@ import React from 'react'
 import "../Estilos/CompIndividual.css"
 
 export const CompIndividual = ({ categoria, valor, unidad }) => {
-    return (
-        <div className="claseIndividual">
-            <div className='nombreParametro'>
-                {categoria}
-            </div>
+  return (
+    <div className="claseIndividual">
+      <div className='nombreParametro'>
+        {categoria}
+      </div>
 
-            <div className='nombreValor'>
-                {valor}<span>  </span>
-                <span className='nombreUnidad'>{unidad}</span>
-            </div>
-        </div>
+      <div className='nombreValor'>
+        {valor}<span>  </span>
+        <span className='nombreUnidad'>{unidad}</span>
+      </div>
+    </div>
 
-    )
+  )
 }
